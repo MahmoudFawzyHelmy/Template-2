@@ -47,7 +47,7 @@ a {
 .main-title {
   margin: 0 auto 80px;
   padding: 10px 20px;
-  font-size: 30px;
+  font-size: 35px;
   width: fit-content;
   position: relative;
   text-transform: capitalize;
@@ -309,7 +309,7 @@ header .container .dropdown .dropdown-list li a i {
 
 /* start catogery section */
 .catogery {
-  padding-top: var(--main-padding);
+  padding-top: var(--main-padding / 2);
   padding-bottom: var(--main-padding);
 }
 
@@ -536,9 +536,11 @@ header .container .dropdown .dropdown-list li a i {
 
 /* start features section */
 .featuers {
-  padding-top: var(--main-padding / 2);
+  padding-top: var(--main-padding);
   padding-bottom: var(--main-padding);
+  background-color: var(--section-background);
 }
+
 .featuers .main-title {
   margin-bottom: 30px;
 }
@@ -553,10 +555,11 @@ header .container .dropdown .dropdown-list li a i {
   font-size: 20px;
   text-transform: capitalize;
 }
+.featuers .grid-boxes {
+  padding: 30px;
+}
 .featuers .box {
   background-color: rgba(255, 255, 255, 0.8);
-  /* border: 1px solid rgba(0, 0, 0, 0.8); */
-  /* padding: 20px; */
   font-size: 30px;
   text-align: center;
   position: relative;
@@ -566,7 +569,6 @@ header .container .dropdown .dropdown-list li a i {
   max-width: 100%;
   width: 300px;
 }
-
 .featuers .box .child {
   position: absolute;
   top: 0;
@@ -575,14 +577,35 @@ header .container .dropdown .dropdown-list li a i {
   visibility: hidden;
   opacity: 0;
   transition: all 0.5s ease-in-out;
-
   transform: rotateY(90deg);
   -webkit-transform: rotateY(90deg);
   -moz-transform: rotateY(90deg);
   -ms-transform: rotateY(90deg);
   -o-transform: rotateY(90deg);
 }
-
+.featuers .box .icons li:nth-child(1) {
+  color: #1877f2;
+}
+.featuers .box .icons li:nth-child(2) {
+  color: #1da1f2;
+}
+.featuers .box .icons li:nth-child(3) {
+  color: #ff0000;
+}
+.featuers .box .icons li:nth-child(4) {
+  color: #0077b5;
+}
+.featuers .box .box-info i {
+  font-size: 18px;
+}
+.featuers .box .box-info .active {
+  color: yellow;
+}
+.featuers .box .box-info span,
+.featuers .box .box-info h3 {
+  display: block;
+  font-size: 18px;
+}
 .featuers .box:hover .child {
   visibility: visible;
   opacity: 1;
