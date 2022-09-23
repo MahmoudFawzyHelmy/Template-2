@@ -557,6 +557,12 @@ header .container .dropdown .dropdown-list li a i {
 }
 .featuers .grid-boxes {
   padding: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #fff;
+}
+.lists {
+  position: relative;
 }
 .featuers .box {
   background-color: rgba(255, 255, 255, 0.8);
@@ -655,12 +661,3 @@ header .container .dropdown .dropdown-list li a i {
 }
 
 /* end animation */
-.grid-boxes {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #fff;
-  /* padding: 10px; */
-}
-.lists {
-  position: relative;
-}
